@@ -4,6 +4,7 @@ WHERE ID%2 = 0;
 --- ex2
 SELECT COUNT(CITY) - COUNT (DISTINCT (CITY)) FROM STATION;
 --- ex3
+SELECT CEIL(AVG(salary)-AVG(REPLACE(salary,0,''))) FROM EMPLOYEES;
 --- ex4
 SELECT 
 ROUND(CAST (SUM(item_count*order_occurrences)/SUM(order_occurrences) AS DECIMAL),1)
